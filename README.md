@@ -76,7 +76,7 @@ Here is stored the prisma client, so can be imported.
 └── yarn.lock
 ```
 
-# Docomentation
+# Documentation
  - [Prisma Documentation](https://www.prisma.io/docs/concepts)
  - [Express JS Documentation](https://expressjs.com)
  - [Typescript Docs](https://www.typescriptlang.org/docs)
