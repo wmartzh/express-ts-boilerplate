@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
-
+import exampleService from "../services/example.service";
 class ExampleController {
   helloWorld(_req: Request, res: Response) {
-    res.send("Hello world");
+    res.send(exampleService.getMessage());
   }
 }
 
