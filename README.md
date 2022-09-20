@@ -75,3 +75,8 @@ Here is stored the prisma client, so can be imported.
 ├── tsconfig.json
 └── yarn.lock
 ```
+
+# Docomentation
+ - [Prisma Documentation](https://www.prisma.io/docs/concepts)
+ - [Express JS Documentation](https://expressjs.com)
+ - [Typescript Docs](https://www.typescriptlang.org/docs)
