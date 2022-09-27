@@ -1,8 +1,9 @@
 import { Request, Response } from "express";
 import exampleService from "../services/example.service";
-class ExampleController {
+import { BaseController } from "../types/base.controller";
+class ExampleController extends BaseController {
   helloWorld(_req: Request, res: Response) {
-    res.send(exampleService.getMessage());
+    this.responseHandler(res, exampleService.getMessage(), 200);
   }
 }
 
