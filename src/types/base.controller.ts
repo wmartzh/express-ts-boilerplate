@@ -1,4 +1,4 @@
-import { Request, Response } from "express";
+import { Response } from "express";
 
 export class BaseController {
   /**
@@ -9,6 +9,6 @@ export class BaseController {
    * @param {number} statusCode - The HTTP status code to return.
    */
   responseHandler(res: Response, response: any, statusCode: number) {
-    res.status(statusCode).json(res);
+    res.status(statusCode).json(response);
   }
 }
