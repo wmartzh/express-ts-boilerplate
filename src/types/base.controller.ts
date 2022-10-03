@@ -1,4 +1,5 @@
 import { Response } from "express";
+import { HttpError } from "./custom.error";
 
 export class BaseController {
   /**
@@ -10,5 +11,20 @@ export class BaseController {
    */
   responseHandler(res: Response, response: any, statusCode: number) {
     res.status(statusCode).json(response);
+  }
+  /**
+   * If the error is an instance of HttpError, then return the responseHandler function with the error
+   * message and status. Otherwise, return the responseHandler function with the error and a status of
+   * 500
+   * @param {Response} res - Response - The response object that will be sent back to the client
+   * @param {any} error - The error object that was thrown
+   * @returns The responseHandler function is being returned.
+   */
+  public errorHandler(res: Response, error: any) {
+    if (error instanceof HttpError) {
+      return this.responseHandler(res, error.message, error.status);
+    } else {
+      return this.responseHandler(res, { error: error }, 500);
+    }
   }
 }
