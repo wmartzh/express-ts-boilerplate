@@ -1,6 +1,6 @@
 # Express JS Boilerplate
 
-An basic express boilerplate for APIs
+An basic express boilerplate for APIs in node
 
 ## Requirements
 
@@ -77,6 +77,7 @@ Here is stored the prisma client, so can be imported.
 ```
 
 # Documentation
- - [Prisma Documentation](https://www.prisma.io/docs/concepts)
- - [Express JS Documentation](https://expressjs.com)
- - [Typescript Docs](https://www.typescriptlang.org/docs)
+
+- [Prisma Documentation](https://www.prisma.io/docs/concepts)
+- [Express JS Documentation](https://expressjs.com)
+- [Typescript Docs](https://www.typescriptlang.org/docs)
