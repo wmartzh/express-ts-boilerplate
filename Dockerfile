@@ -1,4 +1,4 @@
-FROM node:16.17
+FROM node:lts-hydrogen
 
 WORKDIR /app
 
